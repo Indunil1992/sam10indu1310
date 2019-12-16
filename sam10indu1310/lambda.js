@@ -1,4 +1,4 @@
 exports.handler = async (event) => {
     
-    return {"message": "Successfully executed cloudWatch"};
+    return {"message": "Successfully executed cognito"};
 };
