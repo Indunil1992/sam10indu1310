@@ -1,0 +1,91 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "a5fe88be-a1b9-4318-8421-4a9c90767072": {
+        "id": "a5fe88be-a1b9-4318-8421-4a9c90767072",
+        "parent": null,
+        "name": "sam10indu1310",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "ddc8cdca-2470-4d28-9b46-a94572d0b3e5"
+        ],
+        "isRemovable": false,
+        "filePath": "sam10indu1310"
+      },
+      "ddc8cdca-2470-4d28-9b46-a94572d0b3e5": {
+        "id": "ddc8cdca-2470-4d28-9b46-a94572d0b3e5",
+        "parent": "a5fe88be-a1b9-4318-8421-4a9c90767072",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sam10indu1310/lambda.js",
+        "code": "exports.handler = async (event) => {\n    \n    return {\"message\": \"Successfully executed cloudWatch\"};\n};",
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "cweonemin",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "rootNode": "a5fe88be-a1b9-4318-8421-4a9c90767072",
+    "openFiles": [
+      "ddc8cdca-2470-4d28-9b46-a94572d0b3e5"
+    ],
+    "currentFileId": "ddc8cdca-2470-4d28-9b46-a94572d0b3e5",
+    "resources": {
+      "cweonemin": {
+        "name": "cweonemin",
+        "type": "CLOUD_WATCH",
+        "config": {
+          "mode": 1,
+          "arn": "arn:aws:events:us-east-1:318300609668:rule/onemin",
+          "name": "onemin"
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "sam10indu1310",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1576483669160
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "sam10indu1310",
+      "url": "https://github.com/Indunil1992/sam10indu1310"
+    }
+  }
+}
